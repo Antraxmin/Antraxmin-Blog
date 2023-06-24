@@ -35,6 +35,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
+  font-weight: 400;
 }
 
 /* --- Typography --- */
@@ -776,6 +777,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-subtitle {
+    font-family: $font-family-base;
     font-size: 95%;
     color: var(--sidebar-muted-color);
     margin-top: 0.25rem;
