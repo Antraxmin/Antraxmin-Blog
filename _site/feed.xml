@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Antraxmin</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-24T17:28:35+09:00</updated>
+  <updated>2023-06-24T17:41:30+09:00</updated>
   <author>
     <name>Antraxmin</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/jekyll-chirpy-theme-blog/" rel="alternate" type="text/html" title="Jekyll Chirpy 테마로 나만의 기술 블로그 만들기" />
     <published>2023-06-24T17:17:00+09:00</published>
   
-    <updated>2023-06-24T17:17:00+09:00</updated>
+    <updated>2023-06-24T17:29:04+09:00</updated>
   
     <id>http://localhost:4000/posts/jekyll-chirpy-theme-blog/</id>
     <content src="http://localhost:4000/posts/jekyll-chirpy-theme-blog/" />
