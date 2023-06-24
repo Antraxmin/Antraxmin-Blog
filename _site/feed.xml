@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Antraxmin</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-24T17:20:50+09:00</updated>
+  <updated>2023-06-24T17:28:35+09:00</updated>
   <author>
     <name>Antraxmin</name>
     <uri>http://localhost:4000/</uri>
@@ -29,7 +29,7 @@
     <id>http://localhost:4000/posts/jekyll-chirpy-theme-blog/</id>
     <content src="http://localhost:4000/posts/jekyll-chirpy-theme-blog/" />
     <author>
-      <name>Antraxmin</name>
+      <name>antraxmin</name>
     </author>
 
   
@@ -46,21 +46,17 @@
 
 
 
-      Jekyll Chirpy 테마로 나만의 기술 블로그 만들기
-
-Jekyll의 인기있는 테마 중 하나인 Chirpy를 이용해 기술 블로그를 만들어 보려고 한다. 전에 github pages를 이용하여 배포를 시도하였으나, 유독 Chirpy 테마만 제대로 빌드되지 않았던 기억이 있다.
+      Jekyll의 인기있는 테마 중 하나인 Chirpy를 이용해 기술 블로그를 만들어 보려고 한다. 전에 github pages를 이용하여 배포를 시도하였으나, 유독 Chirpy 테마만 제대로 빌드되지 않았던 기억이 있다.
 
 현재는 개인 커스텀 도메인도 소유하고 있어 굳이 github.io 를 사용할 필요가 없기에 배포는 Vercel 을 이용하여 진행할 것이다. 
 
 1. Ruby 설치
 
-
-
 Jekyll을 사용하여 기술 블로그를 만들기 위해서는 먼저 Ruby와 jekyll 을 로컬 컴퓨터에 설치해야 한다.
 
 윈도우 환경에서는 Ruby 공식 사이트를 통해 다운받거나 chocolatey 같은 패키지 매니저를 이용하여 Ruby를 설치한다.
 
-Ruby를 ...
+Ruby를 설치하였다면 터미널에 접속하여 다음 명령어로 jekyll을 설치한...
     </summary>
   
 
