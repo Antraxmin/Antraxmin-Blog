@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Antraxmin</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-26T13:06:41+09:00</updated>
+  <updated>2023-06-26T14:22:03+09:00</updated>
   <author>
     <name>Antraxmin</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,50 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Jekyll Chirpy 테마 오류 해결 일지</title>
+    <link href="http://localhost:4000/posts/jekyll-sidebar-toc-error/" rel="alternate" type="text/html" title="Jekyll Chirpy 테마 오류 해결 일지" />
+    <published>2023-06-26T13:31:00+09:00</published>
+  
+    <updated>2023-06-26T13:31:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/jekyll-sidebar-toc-error/</id>
+    <content src="http://localhost:4000/posts/jekyll-sidebar-toc-error/" />
+    <author>
+      <name>Antraxmin</name>
+    </author>
+
+  
+    
+    <category term="Blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      지난 포스팅에서 Chirpy 테마를 이용해 Jekyll 테마를 성공적으로 배포하였다고 생각하였으나 예상치 못한 오류가 발생하였다. 발생한 오류는 다음과 같다.
+
+
+  다크모드 적용 X
+  TOC 자동 생성 X
+  모바일 화면에서 사이드바 및 검색 기능 작동 X
+
+
+chirpy 테마가 자랑하는 핵심적인 기능이 작동하지 않았기 때문에 github issue와 stackoverflow를 열심히 뒤져서 오류를 해결하였다. 해결하는 과정에서 도움이 되었던 한국어 문서는 단 한 건도 없었기 때문에 똑같은 오류를 겪고 있는 분들이 내 블로그를 보고 시간낭비 없이 오류를 해결하였으면 한다.
+
+먼저 강조하고 싶은 것은 본인의 로컬 환경이 아닌 Jekyll 블로그 테마 상의 문제라고 생각되었을 때 가장 먼저 찾아봐야 하...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
