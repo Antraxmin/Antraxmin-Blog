@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Antraxmin</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-26T14:30:43+09:00</updated>
+  <updated>2023-06-26T16:26:36+09:00</updated>
   <author>
     <name>Antraxmin</name>
     <uri>http://localhost:4000/</uri>
@@ -97,6 +97,60 @@ chirpy 테마가 자랑하는 핵심적인 기능이 작동하지 않았기 때�
 Jekyll을 사용하여 기술 블로그를 만들기 위해서는 먼저 Ruby와 jekyll 을 로컬 컴퓨터에 설치해야 한다. 윈도우 환경에서는 Ruby 공식 사이트를 통해 다운받거나 chocolatey 같은 패키지 매니저를 이용하여 Ruby를 설치한다.
 
 Ruby를 설치하였다면 터미널에 접속하여 다음 명령어로 jekyll을 설치한다....
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Spring Boot 개발환경 구축 (IntelliJ)</title>
+    <link href="http://localhost:4000/posts/springboot-01-setup/" rel="alternate" type="text/html" title="Spring Boot 개발환경 구축 (IntelliJ)" />
+    <published>2023-05-27T14:58:00+09:00</published>
+  
+    <updated>2023-05-27T14:58:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/springboot-01-setup/</id>
+    <content src="http://localhost:4000/posts/springboot-01-setup/" />
+    <author>
+      <name>Antraxmin</name>
+    </author>
+
+  
+    
+    <category term="Study" />
+    
+    <category term="Spring Boot" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      스프링부트란?
+
+기존 스프링 프레임워크의 복잡한 환경 설정을 간소화하여 쉽고 빠르게 개발을 시작할 수 있도록 도와주는 경량화 프레임워크이다. 스프링부트는 다음과 같은 편리함을 제공한다.
+
+
+  내장 Tomcat 서버를 통한 빠르고 간편한 배포
+  starter를 통한 의존성 관리 자동화
+  xml 설정 자동화를 통한 복잡한 설정 간소화
+
+
+스프링부트 개발환경 구축하기
+
+
+  해당 포스팅은 사전에 IntelliJ 및 Java JDK 11이 설치되어 있다고 가정하고 진행한다.
+
+
+Spring Initializer 구성
+
+Spring Initializer란 스프링에서 공식 지원하는 웹 기반의 프로젝트 생성 도구이다. start.spring.io에 접속하여 본인이 사용할 빌드 툴, 언어, JDK 버전 및 De...
     </summary>
   
 
