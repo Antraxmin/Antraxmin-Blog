@@ -31,6 +31,10 @@
   >
 
   
+    
+
+    
+  
 
   
 
@@ -39,23 +43,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Study" />
+<meta property="og:title" content="[Spring Boot] 웹의 기본 구조와 HTTP 통신" />
+<meta name="author" content="Antraxmin" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/categories/study/" />
-<meta property="og:url" content="http://localhost:4000/categories/study/" />
+<meta name="description" content="본격적인 Spring Boot 개발에 앞서 웹을 구성하는 클라이언트와 서버의 개념을 알아보고, 두 요소 간의 통신을 가능하게 해주는 HTTP 프로토콜과 REST API에 대해 알아보자." />
+<meta property="og:description" content="본격적인 Spring Boot 개발에 앞서 웹을 구성하는 클라이언트와 서버의 개념을 알아보고, 두 요소 간의 통신을 가능하게 해주는 HTTP 프로토콜과 REST API에 대해 알아보자." />
+<link rel="canonical" href="http://localhost:4000/posts/springboot-01/" />
+<meta property="og:url" content="http://localhost:4000/posts/springboot-01/" />
 <meta property="og:site_name" content="Antraxmin" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-22T19:17:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Study" />
+<meta property="twitter:title" content="[Spring Boot] 웹의 기본 구조와 HTTP 통신" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Study","url":"http://localhost:4000/categories/study/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Antraxmin","url":"https://github.com/Antraxmin/"},"dateModified":"2023-05-22T19:17:00+09:00","datePublished":"2023-05-22T19:17:00+09:00","description":"본격적인 Spring Boot 개발에 앞서 웹을 구성하는 클라이언트와 서버의 개념을 알아보고, 두 요소 간의 통신을 가능하게 해주는 HTTP 프로토콜과 REST API에 대해 알아보자.","headline":"[Spring Boot] 웹의 기본 구조와 HTTP 통신","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/springboot-01/"},"url":"http://localhost:4000/posts/springboot-01/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Study | Antraxmin
+  <title>[Spring Boot] 웹의 기본 구조와 HTTP 통신 | Antraxmin
   </title>
 
   <!--
@@ -107,7 +113,12 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.0/dist/tocbot.min.css">
+  
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -460,16 +471,10 @@
           
         
           
-            <span>
-              <a href="/categories">
-                Categories
-              </a>
-            </span>
-          
         
           
             
-              <span>Study</span>
+              <span>[Spring Boot] 웹의 기본 구조와 HTTP 통신</span>
             
 
           
@@ -481,7 +486,7 @@
     <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <i id="search-trigger" class="fas fa-search fa-fw"></i>
@@ -512,7 +517,7 @@
 
 
 
-<div class="row mb-5">
+<div class="row">
   <!-- core -->
   <div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pe-xl-4">
     
@@ -523,92 +528,233 @@
       
         
       
+        <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
         
-
-
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Study
-    <span class="lead text-muted ps-2">4</span>
-  </h1>
-
-  <ul class="post-content ps-0">
+      
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/likelion-be-week7-01/">[Spring Security] 스프링 시큐리티 시작하기</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
 
+    <!-- combine -->
+    
 
-
-
-
-<span
-  class="text-muted small"
-  data-ts="1687784280"
-  data-df="ll"
   
->
-  Jun 26, 2023
-</span>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/springboot-02-web/">웹의 기본 구조</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<span
-  class="text-muted small"
-  data-ts="1686577200"
-  data-df="ll"
   
->
-  Jun 12, 2023
-</span>
 
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/springboot-01-setup/">Spring Boot 개발환경 구축 (IntelliJ)</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
 
 
 
 
 
-<span
-  class="text-muted small"
-  data-ts="1685167080"
-  data-df="ll"
   
->
-  May 27, 2023
-</span>
+  
 
-      </li>
+  
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/springboot-01/">[Spring Boot] 웹의 기본 구조와 HTTP 통신</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<h1 data-toc-skip>[Spring Boot] 웹의 기본 구조와 HTTP 통신</h1>
+
+<div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -617,19 +763,219 @@
 
 
 
-<span
-  class="text-muted small"
+<em
+  class=""
   data-ts="1684750620"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
   May 22, 2023
-</span>
+</em>
 
-      </li>
+    </span>
+
+    <!-- lastmod date -->
     
-  </ul>
+
+  
+
+  <div class="d-flex justify-content-between">
+    <!-- author(s) -->
+    <span>
+      
+
+      By
+
+      <em>
+      
+        
+          <a href="https://github.com/Antraxmin/">Antraxmin</a>
+          
+        
+      
+      </em>
+    </span>
+
+    <div>
+      <!-- page views -->
+      
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="1362 words"
+>
+  <em>7 min</em> read</span>
+
+    </div>
+
+  </div> <!-- .d-flex -->
+
+</div> <!-- .post-meta -->
+
+<div class="post-content">
+  <p>본격적인 Spring Boot 개발에 앞서 웹을 구성하는 클라이언트와 서버의 개념을 알아보고, 두 요소 간의 통신을 가능하게 해주는 HTTP 프로토콜과 REST API에 대해 알아보자.</p>
+
+<h2 id="클라이언트와-서버"><span class="me-2">클라이언트와 서버</span><a href="#클라이언트와-서버" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>컴퓨터 네트워크 상에서 상호작용하는 두 가지 요소는 클라이언트와 서버이다. 
+<code class="language-plaintext highlighter-rouge">클라이언트(Client)</code>는 서비스를 요청하는 주체로, 웹 브라우저나 모바일 애플리케이션 상에서 특정한 동작을 통해 서버로 요청을 보내는 역할을 한다. <code class="language-plaintext highlighter-rouge">서버(Server)</code>는 클라이언트의 요청을 받아 처리하고, 필요한 작업을 수행하여 클라이언트에게 데이터나 서비스를 제공하는 역할을 한다. 쉽게 말해서 클라이언트는 서비스를 사용하는 컴퓨터, 서버는 서비스를 제공하는 컴퓨터라고 생각하면 된다. 
+<a href="https://github.com/Antraxmin/Antraxmin-Blog/assets/77287236/216b2360-e036-4449-bb48-4c259fdc04dd" class="popup img-link "><img data-src="https://github.com/Antraxmin/Antraxmin-Blog/assets/77287236/216b2360-e036-4449-bb48-4c259fdc04dd" alt="image" class="lazyload" data-proofer-ignore></a></p>
+
+<h2 id="http란"><span class="me-2">HTTP란?</span><a href="#http란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><code class="language-plaintext highlighter-rouge">HTTP</code>란 HyperText Transfer Protocol의 약자로, 인터넷 상에서 데이터를 주고받을 수 있도록 하는 통신 규약(프로토콜)이다. 웹 환경에서는 웹 브라우저와 웹 서버 사이의 html 문서를 교환하기 위한 통신 규약을 사용된다. <br /><br /> HTTP는 기본적으로 요청(Request)와 응답(Response) 구조로 이루어져 있다. 클라이언트가 웹 브라우저를 통해 HTTP 요청을 서버로 보내면 서버는 클라이언트에게 HTTP 응답을 반환한다. 이러한 요청과 응답을 주고받으며 웹 페이지의 내용을 주고받는다. 
+여기서 HTTP 요청이란 클라이언트가 웹 브라우저를 통해 특정한 동작을 수행하여 서버로 원하는 작업을 요청하는 것을 말한다. <br /><br /> 예를 들면 사이트의 ‘회원가입’ 버튼을 눌러 회원가입 페이지로 이동하게끔 하는 것, 블로그에 글을 쓸 때 ‘발행’ 버튼을 눌러 누구든지 내 글을 볼 수 있게끔 하는 것 등이 모두 HTTP 요청을 통해 이루어지는 것이다. 이때 서버에 전달되는 HTTP 요청은 특정한 요청 메소드와 헤더, 바디를 포함한다. 일반적으로 자주 사용되는 요청 메소드는 아래와 같다. <br /></p>
+
+<ul>
+  <li>GET :  서버로부터 특정한 리소스를 요청한다. 클라이언트로부터 GET 요청을 전달받은 서버는 요청한 리소스를 가져와 응답으로 반환한다.</li>
+  <li>POST : 서버로 데이터를 제출거나 새로운 리소스를 생성할 때 사용된다. 클라이언트는 요청 본문에 데이터를 담아 서버로 전송하며, 서버는 일반적으로 생성된 리소스의 정보를 응답으로 반환한다.</li>
+  <li>PUT : 서버에 데이터를 전송하여 새로운 리소스를 생성하거나 기존 리소스를 업데이트할 때 사용된다. POST 요청과 마찬가지로 요청 본문에 데이터를 담아 서버로 전송한다.</li>
+  <li>DELETE : 특정 리소스를 삭제하기 위해 사용한다. 클라이언트는 특정 리소스의 url로 DELETE 요청을 보냄으로서 서버에게 영구적인 리소스 삭제를 요청한다. 이때 삭제된 리소스는 복구할 수 없기 때문에 신중하게 사용해야 한다.</li>
+</ul>
+
+<p>위의 4가지 요청 메소드는 REST API에서 자주 사용되므로 잘 알아두어야 한다. <br /><br /> <code class="language-plaintext highlighter-rouge">요청 헤더</code>(Request Headers)는 User-Agent, Content-Type, Authorization 등 요청에 대한 부가 정보를 제공하는 다양한 헤더 필드가 포함된다. <code class="language-plaintext highlighter-rouge">요청 바디</code>(Request Body)에는 POST 또는 PUT 요청과 같이 데이터를 서버로 전송해야 하는 요청에서 Json, xml, form data 등 요청에 필요한 데이터가 포함된다.</p>
+
+<h3 id="http-request"><span class="me-2">HTTP Request</span><a href="#http-request" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><code class="language-plaintext highlighter-rouge">HTTP 응답</code>이란 서버가 클라이언트로부터 받은 요청에 대한 처리 결과를 반환하는 메시지이다. 이때 <code class="language-plaintext highlighter-rouge">HTTP 응답 메시지</code>는 상태 코드, 헤더, 바디로 구성된다. 상태 코드는 HTTP 응답 메시지의 상태를 나타내는 세 자리 숫자로, 각 숫자 코드마다 특정한 의미를 가진다. 일반적으로 요청이 성공적으로 처리되었을 때는 상태 코드 200을 사용한다. <br /><br /> 응답 헤더(header)는 Content-type, Content-length, Cache-Control 등 응답 데이터에 대한 메타 정보를 포함한다. <code class="language-plaintext highlighter-rouge">응답 바디</code>(Body)에는 요청한 페이지의 html 내용이나 API의 Json등 클라이언트에게 전달되는 __실제 응답 데이터__가 포함된다.</p>
+
+<h3 id="http-response"><span class="me-2">HTTP Response</span><a href="#http-response" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>HTTP 요청과 응답은 웹 애플리케이션 개발에서 프론트엔드(클라이언트)와 백엔드(서버)간의 통신을 가능하게 하는 중요한 개념으로 다음 포스팅에서 설명할 <code class="language-plaintext highlighter-rouge">REST API</code>의 기반이 되는 통신 프로토콜이다.</p>
+
+
 </div>
+
+<div class="post-tail-wrapper text-muted">
+
+  <!-- categories -->
+  
+  <div class="post-meta mb-3">
+    <i class="far fa-folder-open fa-fw me-1"></i>
+    
+      <a href='/categories/study/'>Study</a>,
+      <a href='/categories/spring-boot/'>Spring Boot</a>
+  </div>
+  
+
+  <!-- tags -->
+  
+  <div class="post-tags">
+    <i class="fa fa-tags fa-fw me-1"></i>
+      
+      <a href="/tags/web/"
+          class="post-tag no-text-decoration" >web</a>
+      
+      <a href="/tags/http/"
+          class="post-tag no-text-decoration" >http</a>
+      
+      <a href="/tags/network/"
+          class="post-tag no-text-decoration" >network</a>
+      
+  </div>
+  
+
+  <div class="post-tail-bottom
+    d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+    <div class="license-wrapper">
+
+      
+
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=[Spring%20Boot]%20%EC%9B%B9%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%A1%B0%EC%99%80%20HTTP%20%ED%86%B5%EC%8B%A0%20-%20Antraxmin&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fspringboot-01%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fab fa-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=[Spring%20Boot]%20%EC%9B%B9%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%A1%B0%EC%99%80%20HTTP%20%ED%86%B5%EC%8B%A0%20-%20Antraxmin&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fspringboot-01%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fspringboot-01%2F&text=[Spring%20Boot]%20%EC%9B%B9%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%A1%B0%EC%99%80%20HTTP%20%ED%86%B5%EC%8B%A0%20-%20Antraxmin"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <i
+      id="copy-link"
+      class="fa-fw fas fa-link small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+    </i>
+  </span>
+</div>
+
+
+  </div><!-- .post-tail-bottom -->
+
+</div><!-- div.post-tail-wrapper -->
+
 
       
     
@@ -1083,10 +1429,305 @@
     </div>
 
     
+      
+      
+
+
+
+  <div id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <div class="panel-heading ps-3 pt-2 mb-2">Contents</div>
+    <nav id="toc"></nav>
+  </div>
+
+
+    
   </div>
 </div>
 
 <!-- tail -->
+
+  <div class="row">
+    <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-3 pe-xl-4 mt-5">
+      
+        
+        <!--
+  Recommend the other 3 posts according to the tags and categories of the current post,
+  if the number is not enough, use the other latest posts to supplement.
+-->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+<!-- Fill with the other newlest posts -->
+
+
+
+
+
+  <div id="related-posts" class="mb-2 mb-sm-4">
+    <h3 class="pt-2 mb-4 ms-1" data-toc-skip>
+      Further Reading
+    </h3>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        
+        
+        <div class="col">
+          <a href="/posts/springboot-01-setup/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1685167080"
+  data-df="ll"
+  
+>
+  May 27, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>Spring Boot 개발환경 구축 (IntelliJ)</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  스프링부트란?
+
+기존 스프링 프레임워크의 복잡한 환경 설정을 간소화하여 쉽고 빠르게 개발을 시작할 수 있도록 도와주는 경량화 프레임워크이다. 스프링부트는 다음과 같은 편리함을 제공한다.
+
+
+  내장 Tomcat 서버를 통한 빠르고 간편한 배포
+  starter를 통한 의존성 관리 자동화
+  xml 설정 자동화를 통한 복잡한 설정 간소화
+
+
+스프링부트 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/posts/springboot-02-web/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1686577200"
+  data-df="ll"
+  
+>
+  Jun 12, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>웹의 기본 구조</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  본격적인 스프링부트 개발에 앞서서 웹을 구성하는 클라이언트와 서버의 개념을 알아보고 두 요소 간의 통신을 가능하게 해주는 프로토콜인 HTTP와 HTTP 프로토콜을 사용하여 데이터를 주고받을 수 있게 하는 REST API의 개념에 대해 알아보자.
+
+클라이언트와 서버
+
+컴퓨터 네트워크 상에서 상호작용하는 두 가지 요소는 클라이언트와 서버이다. 클라이언트(...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+        
+        
+        <div class="col">
+          <a href="/posts/likelion-be-week7-01/" class="card post-preview h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class="small"
+  data-ts="1687784280"
+  data-df="ll"
+  
+>
+  Jun 26, 2023
+</em>
+
+              <h4 class="pt-0 my-2" data-toc-skip>[Spring Security] 스프링 시큐리티 시작하기</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Spring Security란?
+
+스프링 시큐리티(Spring Security)란 애플리케이션의 보안 과 인증 에 관련된 작업을 쉽게 처리할 수 있도록 도와주는 스프링의 하위 프레임워크로, 다음과 같은 보안 기능을 제공한다.
+
+
+  사용자 인증 및 권한 부여
+  세션 관리, 암호화, 웹 보안
+  HTTP, OAuth, OpenID 등 다양한 인증 방식...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      
+    </div>
+    <!-- .card-deck -->
+  </div>
+  <!-- #related-posts -->
+
+
+      
+        
+        <!-- Navigation buttons at the bottom of the post. -->
+
+<div class="post-navigation d-flex justify-content-between">
+  
+    <div
+      class="btn btn-outline-primary disabled"
+      prompt="Older"
+    >
+      <p>-</p>
+    </div>
+  
+
+  
+    <a
+      href="/posts/springboot-01-setup/"
+      class="btn btn-outline-primary"
+      prompt="Newer"
+    >
+      <p>Spring Boot 개발환경 구축 (IntelliJ)</p>
+    </a>
+  
+</div>
+
+      
+        
+        <!--  The comments switcher -->
+
+
+      
+    </div>
+  </div>
 
 
         <!-- The Search results -->
@@ -1576,7 +2217,16 @@
 <!-- layout specified -->
 
 
+  
 
+
+
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -1641,16 +2291,44 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.0/dist/jquery.min.js,npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.7/dayjs.min.js,npm/dayjs@1.11.7/locale/en.min.js,npm/dayjs@1.11.7/plugin/relativeTime.min.js,npm/dayjs@1.11.7/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.0/dist/jquery.min.js,npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.7/dayjs.min.js,npm/dayjs@1.11.7/locale/en.min.js,npm/dayjs@1.11.7/plugin/relativeTime.min.js,npm/dayjs@1.11.7/plugin/localizedFormat.min.js,npm/tocbot@4.21.0/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/misc.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

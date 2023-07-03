@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Antraxmin</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-06-26T17:39:41+09:00</updated>
+  <updated>2023-07-03T17:59:35+09:00</updated>
   <author>
     <name>Antraxmin</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Spring Security] 스프링 시큐리티 시작하기</title>
+    <link href="http://localhost:4000/posts/likelion-be-week7-01/" rel="alternate" type="text/html" title="[Spring Security] 스프링 시큐리티 시작하기" />
+    <published>2023-06-26T21:58:00+09:00</published>
+  
+    <updated>2023-06-26T21:58:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/likelion-be-week7-01/</id>
+    <content src="http://localhost:4000/posts/likelion-be-week7-01/" />
+    <author>
+      <name>Antraxmin</name>
+    </author>
+
+  
+    
+    <category term="Study" />
+    
+    <category term="Spring Security" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Spring Security란?
+
+스프링 시큐리티(Spring Security)란 애플리케이션의 보안 과 인증 에 관련된 작업을 쉽게 처리할 수 있도록 도와주는 스프링의 하위 프레임워크로, 다음과 같은 보안 기능을 제공한다.
+
+
+  사용자 인증 및 권한 부여
+  세션 관리, 암호화, 웹 보안
+  HTTP, OAuth, OpenID 등 다양한 인증 방식 지원
+
+
+
+  스프링 시큐리티는 스프링 프레임워크를 기반으로 하는 애플리케이션의 보안을 효과적으로 구현할 수 있는 강력한 도구이다.
+
+
+Spring Security 시작하기
+
+프로젝트 설정
+
+미리 준비된 스프링 시큐리티 프로젝트 폴더를 IntelliJ에서 열어주었다. (실습에는 JDK 11을 사용한다.)
+
+
+
+프로젝트 설정 옵션
+
+
+  Gradle - G...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
